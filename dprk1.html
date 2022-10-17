@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>진호 | 카카오링크 - 북한 컨셉 (1)</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>카카오링크 - 북한 컨셉 (1)</strong></p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('2be4ece7426d7b59158542763f2d07f6');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '조선로동당 최고사령부의 보도',
+        description: '경애하는 김정은동지께서 총성명울 발표하시었다.',
+        imageUrl:
+          'https://www.chinadailyhk.com/attachments/image/45/232/150/409818_120173/409818_120173_800_auto_jpg.jpg',
+        link: {
+          mobileWebUrl: 'https://jinho5473.com/share/pig.jpg',
+          webUrl: 'https://jinho5473.com/share/pig.jpg',
+        },
+      },
+      buttons: [
+        {
+          title: '《조선로동당》 총성명',
+          link: {
+            mobileWebUrl: 'https://jinho5473.com/share/pig.jpg',
+            webUrl: 'https://jinho5473.com/share/pig.jpg',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- https://jinho5473.com/share/pig.jpg -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
